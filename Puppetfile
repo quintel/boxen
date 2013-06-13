@@ -31,8 +31,8 @@ github "ruby",        "4.1.0"
 github "stdlib",      "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 
-# Adding more modules.
-#
+# Adding Quintel specific modules.
+
 github "alfred",      "1.0.2"
 github "chrome",      "1.1.0"
 github "dropbox",     "1.1.0"
@@ -44,6 +44,4 @@ github "sequel_pro",  "1.0.0"
 github "skype",       "1.0.2"
 github "wget",        "1.0.0"
 github "zsh",         "1.0.0"
-
-# Optional/custom modules. There are tons available at
-# https://github.com/boxen.
+github "mysql",       "1.0.0"

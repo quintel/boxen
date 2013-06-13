@@ -75,7 +75,10 @@ node default {
   include ruby::1_9_3
   include ruby::2_0_0
 
-  # applications
+  # General applications
+  include mysql
+
+  # OSX applications
   include alfred
   include onepassword
   include chrome

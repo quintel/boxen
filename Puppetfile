@@ -29,10 +29,10 @@ github "nodejs",      "2.2.0"
 github "repository",  "2.0.2"
 github "ruby",        "4.1.0"
 github "stdlib",      "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
-github "sudo",        "0.0.0"
+github "sudo",        "1.0.0"
 
-# Adding Quintel specific modules.
-
+# Adding more modules.
+#
 github "alfred",      "1.0.2"
 github "chrome",      "1.1.0"
 github "dropbox",     "1.1.0"

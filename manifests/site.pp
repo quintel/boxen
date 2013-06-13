@@ -76,7 +76,16 @@ node default {
   include ruby::2_0_0
 
   # applications
+  include alfred
   include onepassword
+  include chrome
+  include firefox
+  include dropbox
+  include iterm2::stable
+  include macvim
+  include skype
+  include sequel_pro
+  include zsh
 
   # common, useful packages
   package {

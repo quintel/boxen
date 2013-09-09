@@ -4,8 +4,6 @@
 
 * X code installed (Full version)
 * Download Command Line Tools from Preferences in XCode
-* You should have **Git** (download and install from [here](http://git-scm.com/download/mac), 
-  if the computer says 'no', you might need to change your Security settings.
 
 ### Steps
 

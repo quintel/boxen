@@ -85,6 +85,9 @@ node default {
   include zsh
   include sourcetree
 
+  # Shell customizations
+  include prezto
+
   # common, useful packages
   package {
     [

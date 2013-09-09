@@ -84,6 +84,7 @@ node default {
   include skype
   include sequel_pro
   include zsh
+  include sourcetree
 
   # common, useful packages
   package {

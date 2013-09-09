@@ -9,4 +9,4 @@
 
 1. Get a [Github](http://github.com) account
 2. Make sure that user is member of the [Quintel organization](https://github.com/organizations/quintel) on Github.
-3. Run the following command: `curl bootstrap.quintel.com/install.sh | sh`
+3. Run the following command: `curl quintel.com/install.sh | sh`

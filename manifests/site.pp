@@ -101,4 +101,11 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # Load the boxen environment on login
+  file_line { "boxen environment loading":
+    ensure  => present,
+    line    => 'source /opt/boxen/env.sh',
+    path    => '${home}/.zshrc'
+  }
 }

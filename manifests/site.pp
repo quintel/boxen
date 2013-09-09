@@ -106,6 +106,6 @@ node default {
   file_line { "boxen environment loading":
     ensure  => present,
     line    => 'source /opt/boxen/env.sh',
-    path    => '${home}/.zshrc'
+    path    => '${boxen::config::homedir}/.zshrc'
   }
 }

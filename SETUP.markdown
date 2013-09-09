@@ -3,7 +3,8 @@
 ### Prerequisites for your Mac
 
 * X code installed (CLT or normal one)
-* You should have **Git** (download and install from [here](http://git-scm.com/download/mac) )
+* You should have **Git** (download and install from [here](http://git-scm.com/download/mac), 
+  if the computer says 'no', you might need to change your Security settings.
 
 ### Steps
 

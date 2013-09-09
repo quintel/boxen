@@ -1,9 +1,9 @@
 # Set up a new user
 
-### Prerequisites
+### Prerequisites for your Mac
 
-* A Mac
-* X code installed
+* X code installed (CLT or normal one)
+* You should have **Git** (download and install from [here](http://git-scm.com/download/mac) )
 
 ### Steps
 

@@ -88,6 +88,9 @@ node default {
   # Shell customizations
   include prezto
 
+  # The Quintel projects
+  include projects::all
+
   # common, useful packages
   package {
     [

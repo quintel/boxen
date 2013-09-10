@@ -33,6 +33,7 @@ github "sudo",        "1.0.0"
 github "openssl",     "1.0.0"
 github "xquartz",     "1.1.0"
 github "memcached",   "1.2.0"
+github "imagemagick", "1.2.1"
 
 # Adding Quintel specific modules.
 

@@ -88,6 +88,7 @@ node default {
   include sublime_text_2
   include caffeine
   include better_touch_tool
+  include imagemagick
 
   # Shell customizations
   include prezto

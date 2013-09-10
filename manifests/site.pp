@@ -87,6 +87,7 @@ node default {
   include sourcetree
   include sublime_text_2
   include caffeine
+  include better_touch_tool
 
   # Shell customizations
   include prezto

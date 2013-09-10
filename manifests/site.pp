@@ -71,6 +71,7 @@ node default {
 
   # General applications
   include mysql
+  include memcached
 
   # OSX applications
   include alfred
@@ -84,6 +85,8 @@ node default {
   include sequel_pro
   include zsh
   include sourcetree
+  include sublime_text_2
+  include caffeine
 
   # Shell customizations
   include prezto

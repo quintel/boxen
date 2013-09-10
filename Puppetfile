@@ -32,6 +32,7 @@ github "stdlib",      "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "openssl",     "1.0.0"
 github "xquartz",     "1.1.0"
+github "memcached",   "1.2.0"
 
 # Adding Quintel specific modules.
 
@@ -49,3 +50,5 @@ github "zsh",         "1.0.0"
 github "mysql",       "1.1.5"
 github "sourcetree",  "1.0.0"
 github "prezto",      "1.0.1", :repo => "archfear/puppet-prezto"
+github "sublime_text_2", "1.1.2"
+github "caffeine",    "1.0.0"

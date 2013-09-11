@@ -5,7 +5,7 @@ require gcc
 Exec {
   group       => 'staff',
   logoutput   => on_failure,
-  user        => $luser,
+  user        => $boxen_user,
 
   path => [
     "${boxen::config::home}/rbenv/shims",
@@ -20,13 +20,13 @@ Exec {
 
   environment => [
     "HOMEBREW_CACHE=${homebrew::config::cachedir}",
-    "HOME=/Users/${::luser}"
+    "HOME=/Users/${::boxen_user}"
   ]
 }
 
 File {
   group => 'staff',
-  owner => $luser
+  owner => $boxen_user
 }
 
 Package {
@@ -107,17 +107,17 @@ node default {
   }
 
   # Load Z!
-  file_line { "z shortcut":
+  file_line { 'z shortcut':
     ensure  => present,
     line    => '. `brew --prefix`/etc/profile.d/z.sh',
-    path    => "/Users/${luser}/.zshrc"
+    path    => "/Users/${::boxen_user}/.zshrc"
   }
 
   # Load the boxen environment on login
-  file_line { "boxen environment loading":
+  file_line { 'boxen environment loading':
     ensure  => present,
     line    => '. /opt/boxen/env.sh',
-    path    => "/Users/${luser}/.zshrc",
+    path    => "/Users/${::boxen_user}/.zshrc",
     before  => File_line['z shortcut']
   }
 }

@@ -71,6 +71,7 @@ node default {
   # General applications
   include mysql
   include memcached
+  include pow
 
   # OSX applications
   include alfred
@@ -114,6 +115,13 @@ node default {
   file_line { "boxen environment loading":
     ensure  => present,
     line    => 'source /opt/boxen/env.sh',
+    path    => "/Users/${luser}/.zshrc"
+  }
+
+  # Load Z!
+  file_line { "z shortcut":
+    ensure  => present,
+    line    => '. `brew --prefix`/etc/profile.d/z.sh'
     path    => "/Users/${luser}/.zshrc"
   }
 }

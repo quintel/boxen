@@ -70,6 +70,7 @@ node default {
   include ruby::2_0_0
 
   # General applications
+  include nginx
   include mysql
   include memcached
 

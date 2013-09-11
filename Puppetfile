@@ -34,6 +34,7 @@ github "openssl",     "1.0.0"
 github "xquartz",     "1.1.0"
 github "memcached",   "1.2.0"
 github "imagemagick", "1.2.1"
+github "nginx",       "1.4.2"
 
 # Adding Quintel specific modules.
 

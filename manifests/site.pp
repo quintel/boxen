@@ -121,7 +121,7 @@ node default {
   # Load Z!
   file_line { "z shortcut":
     ensure  => present,
-    line    => '. `brew --prefix`/etc/profile.d/z.sh'
+    line    => '. `brew --prefix`/etc/profile.d/z.sh',
     path    => "/Users/${luser}/.zshrc"
   }
 }

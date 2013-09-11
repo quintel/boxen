@@ -111,17 +111,18 @@ node default {
     target => $boxen::config::repodir
   }
 
-  # Load the boxen environment on login
-  file_line { "boxen environment loading":
-    ensure  => present,
-    line    => 'source /opt/boxen/env.sh',
-    path    => "/Users/${luser}/.zshrc"
-  }
-
   # Load Z!
   file_line { "z shortcut":
     ensure  => present,
     line    => '. `brew --prefix`/etc/profile.d/z.sh',
     path    => "/Users/${luser}/.zshrc"
+  }
+
+  # Load the boxen environment on login
+  file_line { "boxen environment loading":
+    ensure  => present,
+    line    => '. /opt/boxen/env.sh',
+    path    => "/Users/${luser}/.zshrc",
+    before  => File_line['z shortcut']
   }
 }

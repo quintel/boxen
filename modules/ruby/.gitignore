@@ -1,0 +1,7 @@
+/.bundle/
+/.ruby-version
+/bin/
+/spec/fixtures/.tmp/
+/spec/fixtures/.librarian/
+/spec/fixtures/vendor/
+/spec/fixtures/modules/

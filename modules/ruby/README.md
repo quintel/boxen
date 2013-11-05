@@ -1,10 +1,10 @@
 # Ruby Puppet Module for Boxen
 
-[![Build Status](https://travis-ci.org/boxen/puppet-ruby.png)](https://travis-ci.org/boxen/puppet-ruby)
+[![Build Status](https://travis-ci.org/boxen/puppet-ruby.png?branch=master)](https://travis-ci.org/boxen/puppet-ruby)
 
 Requires the following boxen modules:
 
-* `boxen`
+* `boxen >= 3.2.0`
 * `repository >= 2.1`
 * `xquartz` (OS X only)
 * `autoconf` (some ruby versions)

@@ -116,7 +116,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.5.0)
+    ruby (6.7.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-sequel_pro
@@ -193,7 +193,7 @@ DEPENDENCIES
   pow (= 1.0.0)
   prezto (= 1.0.1)
   repository (= 2.2.0)
-  ruby (= 6.5.0)
+  ruby (= 6.7.1)
   sequel_pro (= 1.0.0)
   skype (= 1.0.4)
   sourcetree (= 1.0.0)

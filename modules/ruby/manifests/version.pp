@@ -12,12 +12,16 @@ define ruby::version(
 ) {
   require ruby
 
-  case $::operatingsystem {
+  case $::osfamily {
     'Darwin': {
       require xquartz
+      include homebrew::config
 
       $os_env = {
-        'CFLAGS' => '-I/opt/X11/include'
+        'BOXEN_S3_HOST'   => $::boxen_s3_host,
+        'BOXEN_S3_BUCKET' => $::boxen_s3_bucket,
+        'CFLAGS'          => "-I${homebrew::config::installdir}/include -I/opt/X11/include",
+        'LDFLAGS'         => "-L${homebrew::config::installdir}/lib -L/opt/X11/lib",
       }
     }
 
